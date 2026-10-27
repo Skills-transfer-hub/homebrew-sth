@@ -5,21 +5,21 @@
 class Sth < Formula
   desc "Skills Transfer Hub (Alpha) — CLI to install AI skills from a hosted catalog."
   homepage "https://github.com/Skills-transfer-hub/sth-releases"
-  version "0.2.43"
+  version "0.2.44"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Skills-transfer-hub/sth-releases/releases/download/v0.2.43/sth-darwin-amd64.tar.gz"
-      sha256 "ecf51e33d1598b878d70c3dbb57e0f3d8e61b33a12aec41c31a49674f9cb395d"
+      url "https://github.com/Skills-transfer-hub/sth-releases/releases/download/v0.2.44/sth-darwin-amd64.tar.gz"
+      sha256 "6be033886924cddf45531e0f4461145093506dcf6779ac5d498a0ea006906351"
 
       define_method(:install) do
         bin.install "sth"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Skills-transfer-hub/sth-releases/releases/download/v0.2.43/sth-darwin-arm64.tar.gz"
-      sha256 "00e6110f3caac08a3da073c8d90dd5385a0e84b2b88d76e859124498b980728e"
+      url "https://github.com/Skills-transfer-hub/sth-releases/releases/download/v0.2.44/sth-darwin-arm64.tar.gz"
+      sha256 "bc2343bcbe70a6dc263316323b061c371f051fffcdbec5e8dd15ce64bc7fc0c1"
 
       define_method(:install) do
         bin.install "sth"
@@ -29,8 +29,8 @@ class Sth < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Skills-transfer-hub/sth-releases/releases/download/v0.2.43/sth-linux-amd64.tar.gz"
-      sha256 "3562592c525f49fbb0df626a1c5564f087534c61e3cd96ada10153de48876a50"
+      url "https://github.com/Skills-transfer-hub/sth-releases/releases/download/v0.2.44/sth-linux-amd64.tar.gz"
+      sha256 "66c4ab08c0b453b661386f18305565cd6497d2f4cdac18fd05b22338c3af9156"
       define_method(:install) do
         bin.install "sth"
       end
